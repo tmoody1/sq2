@@ -14,7 +14,7 @@ spec:
         io.kompose.service: gateway
     spec:
       containers:
-      - image: eu.gcr.io/gleaming-store-226116/bookshop-gateway
+      - image: docker8imanage/bookshop-gateway:1.0
         name: gateway
         ports:
         - containerPort: 8080
