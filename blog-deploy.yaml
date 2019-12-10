@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: blog
-        image: rhan888/blog:latest
+        image: nginx:latest
         ports:
         - containerPort: 80
