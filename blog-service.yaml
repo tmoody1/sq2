@@ -8,6 +8,6 @@ spec:
   - name: "http"
     port: 80
   selector:
-    name: blog
+    name: nginx
   externalIPs:
   - 10.122.8.216
