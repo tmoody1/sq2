@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: ui-deployment
 spec:
-  type: "LoadBalancer"
+  type: "NodePort"
   ports:
   - name: "http"
     port: 80
-    targetPort: 80
   selector:
     name: blog
+  externalIPs:
+  - 10.122.8.216
