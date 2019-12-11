@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    io.kompose.service: metadata
+  name: metadata
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: metadata
+    spec:
+      containers:
+      - image: docker8imanage/bookshop-metadata
+        name: metadata
+        ports:
+        - containerPort: 8080
+status: {}
