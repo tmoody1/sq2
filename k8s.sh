@@ -6,3 +6,5 @@ whoami
 chmod +x ./kubectl
 mkdir ${HOME}/.kube
 envsubst <config > ${HOME}/.kube/config
+
+./kubectl get all

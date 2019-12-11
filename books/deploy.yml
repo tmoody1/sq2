@@ -2,8 +2,8 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    io.kompose.service: metadata
-  name: metadata
+    io.kompose.service: books
+  name: books
 spec:
   replicas: 1
   strategy: {}
@@ -11,11 +11,11 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        io.kompose.service: metadata
+        io.kompose.service: books
     spec:
       containers:
       - image: eu.gcr.io/gleaming-store-226116/bookshop-metadata
-        name: metadata
+        name: books
         ports:
         - containerPort: 8080
 status: {}
