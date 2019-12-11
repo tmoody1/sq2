@@ -4,6 +4,5 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s htt
 ls
 whoami
 chmod +x ./kubectl
-sudo mv ./kubectl /usr/local/bin/kubectl
 mkdir ${HOME}/.kube
 envsubst <config > ${HOME}/.kube/config

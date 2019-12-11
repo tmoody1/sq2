@@ -7,4 +7,4 @@ jobs:
     - stage: setup
       script: sh k8s.sh
     - stage: list 
-      script: kubectl get all   
+      script: ./kubectl get all   
