@@ -1,0 +1,10 @@
+branches:
+  only:
+    master
+
+jobs:
+  include:
+    - stage: setup
+      script: sh k8s.sh
+    - stage: list 
+      script: kubectl get all   
