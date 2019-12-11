@@ -7,13 +7,13 @@ clusters:
 contexts:
 - context:
     cluster: ${CLUSTER_NAME}
-    user: ${CLUSTER_USER} 
-  name: ${CLUSTER_USER}
-current-context: ${CLUSTER_USER}
+    user: ${CLUSTER_NAME} 
+  name: ${CLUSTER_NAME}
+current-context: ${CLUSTER_NAME}
 kind: Config
 preferences: {}
 users:
-- name: ${CLUSTER_USER} 
+- name: ${CLUSTER_NAME} 
   user:
     auth-provider:
       config:
