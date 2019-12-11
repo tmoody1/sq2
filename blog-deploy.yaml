@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: ui-deployment
   labels:
-    app: blog
+    app: nginx
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: blog
+      app: nginx
   template:
     metadata:
       labels:
-        app: blog
+        app: nginx
     spec:
       containers:
-      - name: blog
+      - name: nginx
         image: nginx:latest
         ports:
         - containerPort: 80
