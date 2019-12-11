@@ -5,5 +5,4 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 
 mkdir ${HOME}/.kube
-envsubst <config >
-${HOME}/.kube/config
+envsubst <config > ${HOME}/.kube/config

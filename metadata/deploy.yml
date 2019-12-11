@@ -14,7 +14,7 @@ spec:
         io.kompose.service: metadata
     spec:
       containers:
-      - image: docker8imanage/bookshop-metadata
+      - image: eu.gcr.io/gleaming-store-226116/bookshop-metadata
         name: metadata
         ports:
         - containerPort: 8080

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    io.kompose.service: review
+  name: review
+spec:
+  type: NodePort
+  ports:
+  - name: "review"
+    port: 8080
+    targetPort: 8080
+    nodePort: 30030
+  selector:
+    io.kompose.service: review
+status:
+  loadBalancer: {}

@@ -2,8 +2,8 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   labels:
-    io.kompose.service: gateway
-  name: gateway
+    io.kompose.service: review
+  name: review
 spec:
   replicas: 1
   strategy: {}
@@ -11,11 +11,11 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        io.kompose.service: gateway
+        io.kompose.service: review
     spec:
       containers:
-      - image: eu.gcr.io/gleaming-store-226116/bookshop-gateway
-        name: gateway
+      - image: eu.gcr.io/gleaming-store-226116/bookshop-review
+        name: review
         ports:
         - containerPort: 8080
 status: {}
